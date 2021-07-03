@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "EmployeeHome";
+}
+<script src="~/Scripts/angular.js"></script>
+<script src="~/AngularJs/EmployeeController.js"></script>
+
+<h2>EmployeeHome</h2>
+<div ng-app="module" ng-controller="myController">
+    <table class="table" ng-init="GetEmployee()">
+        <tr>
+            <th>Name</th>
+           
+            <th>Phone</th>
+        </tr>
+        <tr ng-repeat="item in EmployeeList">
+            <td >{{item.employee}}</td>
+          
+            <td>{{item.phone}}</td>
+        </tr>
+    </table>
+</div>
